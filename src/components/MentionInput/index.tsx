@@ -2,7 +2,16 @@ import { IMentionsInputProps } from "../../types/MyTypes";
 import UsersList from "./UsersList";
 import useMentionInput from "./view/useMentionInput";
 
-const MentionInput: React.FC<IMentionsInputProps> = ({ users, classNames = {}, placeholder, rows, value, onChange }) => {
+const MentionInput: React.FC<IMentionsInputProps> = (props) => {
+    const {
+        users,
+        classNames = {},
+        placeholder = "Enter @ to mention",
+        name = "mention-input",
+        rows = 1,
+        value,
+        onChange
+    } = props
     const {
         isMentioning,
         filteredUsers,
@@ -27,8 +36,9 @@ const MentionInput: React.FC<IMentionsInputProps> = ({ users, classNames = {}, p
                 <textarea
                     className={`${inputClass ?? ""} p-2 w-100 rounded-md border-1 border-b-gray-600 resize-none`}
                     ref={textareaRef}
+                    name={name}
                     placeholder={placeholder}
-                    rows={rows ?? 1}
+                    rows={rows}
                     value={value ?? ""}
                     onKeyDown={handleKeyDown}
                     onChange={handleInputChange}

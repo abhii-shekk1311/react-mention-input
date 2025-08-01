@@ -1,19 +1,21 @@
 {
   "name": "react-mention-input",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
+  "description": "A React input field that supports user mentions like @username.",
+  "author": "Abhishek Saini",
   "type": "module",
   "files": [
     "dist"
   ],
   "main": "./dist/react-mention-input.umd.cjs",
   "module": "./dist/react-mention-input.js",
-  "types": "dist/types/index.d.ts", 
+  "types": "dist/types/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/types/index.d.ts",
       "import": "./dist/react-mention-input.js",
-      "require": "./dist/react-mention-input.umd.cjs",
-      "types": "./dist/types/index.d.ts"
+      "require": "./dist/react-mention-input.umd.cjs"
     },
     "./react-mention-input.css": "./dist/react-mention-input.css",
     "./types": "./dist/types/types/MyTypes.d.ts"

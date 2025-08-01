@@ -7,27 +7,28 @@ export interface IClassnames {
     listClass?: string;
     listItemClass?: string;
 }
-export interface IDummyUsers {
+export interface IUsers {
     id: any;
     name: string;
     profile_pic: string;
     [key: string]: any;
 }
 export interface IMentionsInputProps {
-    users: IDummyUsers[];
+    users: IUsers[];
     value: string;
+    name?: string;
     placeholder?: string;
     rows?: number;
     classNames?: IClassnames;
     textareaRef?: RefObject<HTMLTextAreaElement | null>;
-    onChange: (value: string, mentions: IDummyUsers[]) => void;
+    onChange: (value: string, mentions: IUsers[]) => void;
 }
 export interface IUsersListProps {
-    usersList: IDummyUsers[];
+    usersList: IUsers[];
     selectedIndex: number;
     listClass?: string;
     listItemClass?: string;
-    handleMentionClick: (user: IDummyUsers) => void;
+    handleMentionClick: (user: IUsers) => void;
 }
 export interface IUseUsersListProps {
     selectedIndex: number;

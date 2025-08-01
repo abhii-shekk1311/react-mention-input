@@ -1,12 +1,12 @@
 import { ChangeEvent, KeyboardEvent, useEffect, useRef, useState } from 'react'
-import { IDummyUsers, IMentionsInputProps } from '../../../types/MyTypes';
+import { IUsers, IMentionsInputProps } from '../../../types/MyTypes';
 
 const useMentionInput = (props: IMentionsInputProps) => {
     const { users, value, onChange } = props;
     const textareaRef = useRef<HTMLTextAreaElement>(null);
     const userListRef = useRef<HTMLDivElement>(null);
-    const [filteredUsers, setFilteredUsers] = useState<IDummyUsers[]>([]);
-    const [mentionedUsers, setMentionedUsers] = useState<IDummyUsers[]>([]);
+    const [filteredUsers, setFilteredUsers] = useState<IUsers[]>([]);
+    const [mentionedUsers, setMentionedUsers] = useState<IUsers[]>([]);
     const [isMentioning, setIsMentioning] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -42,7 +42,7 @@ const useMentionInput = (props: IMentionsInputProps) => {
     const handleInputChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
         const inputValue = e.target.value;
 
-        const removedUsers: IDummyUsers[] = [];
+        const removedUsers: IUsers[] = [];
 
         // Check for broken mentions
         mentionedUsers.forEach(user => {
@@ -100,7 +100,7 @@ const useMentionInput = (props: IMentionsInputProps) => {
     }
 
     // Handle Mention User Click
-    const handleMentionClick = (user: IDummyUsers) => {
+    const handleMentionClick = (user: IUsers) => {
         const cursorPos = textareaRef?.current?.selectionStart ?? 0;
 
         const before = value.slice(0, cursorPos).replace(/@\w*$/, `@${user.name}`);

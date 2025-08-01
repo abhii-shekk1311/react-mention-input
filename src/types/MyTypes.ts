@@ -11,7 +11,7 @@ export interface IClassnames {
 }
 
 // Dummy users data type
-export interface IDummyUsers {
+export interface IUsers {
     id: any;
     name: string;
     profile_pic: string;
@@ -19,22 +19,23 @@ export interface IDummyUsers {
 }
   
 export interface IMentionsInputProps {
-    users: IDummyUsers[];
+    users: IUsers[];
     value: string;
+    name?: string;
     placeholder?: string;
     rows?: number;
     classNames?: IClassnames;
     textareaRef?: RefObject<HTMLTextAreaElement | null>;
-    onChange: (value: string, mentions: IDummyUsers[]) => void;
+    onChange: (value: string, mentions: IUsers[]) => void;
 }
 
 // UsersList component props type
 export interface IUsersListProps {
-    usersList: IDummyUsers[];
+    usersList: IUsers[];
     selectedIndex: number;
     listClass?: string;
     listItemClass?: string;
-    handleMentionClick: (user: IDummyUsers) => void
+    handleMentionClick: (user: IUsers) => void
 }
 
 // useUsersList component props type
