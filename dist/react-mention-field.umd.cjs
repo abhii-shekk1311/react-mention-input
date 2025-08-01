@@ -1,4 +1,4 @@
-(function(C,d){typeof exports=="object"&&typeof module<"u"?d(exports,require("react")):typeof define=="function"&&define.amd?define(["exports","react"],d):(C=typeof globalThis<"u"?globalThis:C||self,d(C["react-mention-input"]={},C.React))})(this,function(C,d){"use strict";var L={exports:{}},U={};/**
+(function(C,d){typeof exports=="object"&&typeof module<"u"?d(exports,require("react")):typeof define=="function"&&define.amd?define(["exports","react"],d):(C=typeof globalThis<"u"?globalThis:C||self,d(C["react-mention-field"]={},C.React))})(this,function(C,d){"use strict";var L={exports:{}},U={};/**
  * @license React
  * react-jsx-runtime.production.js
  *

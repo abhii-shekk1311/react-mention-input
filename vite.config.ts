@@ -11,8 +11,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'react-mention-input',
-      fileName: 'react-mention-input',
+      name: 'react-mention-field',
+      fileName: 'react-mention-field',
     },
     rollupOptions: {
       external: ['react', 'react-dom'],

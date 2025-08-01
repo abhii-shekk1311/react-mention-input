@@ -1,23 +1,23 @@
 {
-  "name": "react-mention-input",
+  "name": "react-mention-field",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "A React input field that supports user mentions like @username.",
   "author": "Abhishek Saini",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/react-mention-input.umd.cjs",
-  "module": "./dist/react-mention-input.js",
+  "main": "./dist/react-mention-field.umd.cjs",
+  "module": "./dist/react-mention-field.js",
   "types": "dist/types/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/types/index.d.ts",
-      "import": "./dist/react-mention-input.js",
-      "require": "./dist/react-mention-input.umd.cjs"
+      "import": "./dist/react-mention-field.js",
+      "require": "./dist/react-mention-field.umd.cjs"
     },
-    "./react-mention-input.css": "./dist/react-mention-input.css",
+    "./react-mention-field.css": "./dist/react-mention-field.css",
     "./types": "./dist/types/types/MyTypes.d.ts"
   },
   "scripts": {
@@ -49,7 +49,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abhii-shekk1311/react-mention-input.git"
+    "url": "https://github.com/abhii-shekk1311/react-mention-field.git"
   },
   "keywords": [
     "react",
@@ -57,5 +57,5 @@
     "input",
     "react-component"
   ],
-  "homepage": "https://github.com/abhii-shekk1311/react-mention-input"
+  "homepage": "https://github.com/abhii-shekk1311/react-mention-field"
 }

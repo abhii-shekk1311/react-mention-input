@@ -1,4 +1,4 @@
-# react-mention-input
+# react-mention-field
 ## A customizable React input component that supports tagging/mentioning users using **@**.
 
 
@@ -10,27 +10,32 @@
 
 
 ## Getting started
-Install the react-mention-input package via npm:
+Install the react-mention-field package via npm:
 
-`npm install react-mention-input --save`
+`npm install react-mention-field --save`
 
 Or yarn:
 
-`yarn add react-mention-input`
+`yarn add react-mention-field`
 
 To use the package you will need to import the main input component and the types declaration from it:
 
 ```
-import {ReactMentionInput} from "react-mention-input";
-import type { IUsers } from "react-mention-input/types";
+import {ReactMentionInput} from "react-mention-field";
+import type { IUsers } from "react-mention-field/types";
+```
+
+Then you will need to import the CSS file to the main CSS file of your project
+```
+@import 'react-mention-field/react-mention-field.css';
 ```
 
 ### Example Implementation:
 
 ```
 import { useState } from "react";
-import {ReactMentionInput} from "react-mention-input"
-import type { IUsers } from "react-mention-input/types";
+import {ReactMentionInput} from "react-mention-field"
+import type { IUsers } from "react-mention-field/types";
 
 function App() {
   const [value, setValue] = useState<string>("");
