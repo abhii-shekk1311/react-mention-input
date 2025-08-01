@@ -1,7 +1,7 @@
 {
   "name": "react-mention-input",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React input field that supports user mentions like @username.",
   "author": "Abhishek Saini",
   "type": "module",
