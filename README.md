@@ -55,7 +55,7 @@ export default App
 | Prop Name        | Type                                                | Required | Default   | Description                                                                 |
 |------------------|-----------------------------------------------------|----------|-----------|-----------------------------------------------------------------------------|
 | value          | string                                            |    Yes       | ""         | The current value of the input field.                                       |
-| onChange       | (value: string, mentions: IUsers[])               |    Yes       | -         | The callback triggered when the input value changes.                           |
+| onChange       | (value: string, mentions: IUsers[]) => {}               |    Yes       | -         | The callback triggered when the input value changes.                           |
 | users    | Array<IUsers[]>                                         |    Yes       | []      | List of users available for mention.                                 |
 | placeholder    | string                                            |    No       | Enter @ to mention | Placeholder text for the input field.                              |
 | name       | string                                                |    No       | mention-input   | As a form field name attribute need to be passed.                                    |
